@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Vo | Principal QA Engineer, Quality Architect & PMP®</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#070A13',
+                        brandCyan: '#06B6D4',
+                        brandCyanHover: '#0891B2'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Smooth Custom Entrance Keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-reveal {
+            opacity: 0;
+            animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+    </style>
+</head>
+<body class="bg-obsidian text-slate-100 min-h-screen selection:bg-brandCyan selection:text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-obsidian/80 backdrop-blur-md border-b border-slate-800/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="text-xl font-bold tracking-tight">
+                An <span class="text-brandCyan">Vo</span><span class="text-slate-500 text-sm font-normal ml-2">, PMP® | PSM I</span>
+            </div>
+            <div class="hidden lg:flex space-x-7 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#impact" class="hover:text-white transition-colors">Impact</a>
+                <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+                <a href="#pillars" class="hover:text-white transition-colors">Expertise</a>
+                <a href="#testimonials" class="hover:text-white transition-colors">Endorsements</a>
+                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/anvoqa/" target="_blank" class="bg-brandCyan hover:bg-brandCyanHover text-slate-950 px-4 py-2 rounded-lg text-sm font-semibold transition-colors inline-flex items-center gap-2">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center md:text-left">
+        <div class="grid md:grid-cols-3 gap-12 items-center">
+            <div class="md:col-span-2 space-y-6">
+                <div class="animate-reveal flex flex-wrap justify-center md:justify-start gap-2">
+                    <span class="bg-brandCyan/10 border border-brandCyan/30 text-brandCyan px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">
+                        ⚡ Principal QA Engineer
+                    </span>
+                    <span class="bg-slate-800 border border-slate-700 text-slate-300 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">
+                        PMP® Certified
+                    </span>
+                </div>
+                <h1 class="animate-reveal delay-100 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+                    I don't just catch bugs—<br class="hidden sm:inline">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandCyan to-blue-400">I architect quality & speed.</span>
+                </h1>
+                <p class="animate-reveal delay-200 text-lg text-slate-400 max-w-2xl leading-relaxed">
+                    With over 13 years of strategic QA leadership, I specialize in the intersection of delivery acceleration, engineering culture, and high-scale automation architecture. I transform QA from an isolated phase into a high-efficiency development standard.
+                </p>
+                <div class="animate-reveal delay-300 flex flex-wrap justify-center md:justify-start gap-4 pt-2">
+                    <a href="#projects" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-6 py-3 rounded-xl font-medium transition-all hover:scale-[1.02]">
+                        View Frameworks
+                    </a>
+                    <a href="#experience" class="border border-slate-800 hover:border-slate-700 bg-slate-900/50 text-slate-300 px-6 py-3 rounded-xl font-medium transition-all hover:scale-[1.02]">
+                        Track Record
+                    </a>
+                </div>
+            </div>
+            <!-- Quick Profile Overview Card -->
+            <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-2xl shadow-xl space-y-6 transition-all duration-500 hover:border-brandCyan/30 hover:shadow-[0_0_30px_rgba(6,182,212,0.05)]">
+                <h3 class="text-lg font-semibold text-white">The Tech Stack</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 bg-slate-800 border border-slate-700 text-slate-300 rounded-md text-xs font-medium">Ruby / Rails</span>
+                    <span class="px-2.5 py-1 bg-slate-800 border border-slate-700 text-slate-300 rounded-md text-xs font-medium">GraphQL</span>
+                    <span class="px-2.5 py-1 bg-slate-800 border border-slate-700 text-slate-300 rounded-md text-xs font-medium">Java</span>
+                    <span class="px-2.5 py-1 bg-slate-800 border border-slate-700 text-slate-300 rounded-md text-xs font-medium">JavaScript</span>
+                    <span class="px-2.5 py-1 bg-slate-800 border border-slate-700 text-slate-300 rounded-md text-xs font-medium">Playwright</span>
+                    <span class="px-2.5 py-1 bg-slate-800 border border-slate-700 text-slate-300 rounded-md text-xs font-medium">Selenium</span>
+                    <span class="px-2.5 py-1 bg-slate-800 border border-slate-700 text-slate-300 rounded-md text-xs font-medium">Capybara</span>
+                    <span class="px-2.5 py-1 bg-slate-800 border border-slate-700 text-slate-300 rounded-md text-xs font-medium">Cucumber</span>
+                    <span class="px-2.5 py-1 bg-slate-800 border border-slate-700 text-slate-300 rounded-md text-xs font-medium">JMeter</span>
+                    <span class="px-2.5 py-1 bg-slate-800 border border-slate-700 text-slate-300 rounded-md text-xs font-medium">GitHub Actions</span>
+                    <span class="px-2.5 py-1 bg-slate-800 border border-slate-700 text-cyan-300 font-semibold rounded-md text-xs">Playwright Agent (AI)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics / Impact Counters Section -->
+    <section id="impact" class="border-y border-slate-800 bg-slate-900/20 py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Proven Business Impact</h2>
+                <p class="text-slate-400 mt-2">Data-driven outcomes from transforming legacy QA architectures into high-speed pipeline engines.</p>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800/80 text-center transition-all duration-300 hover:-translate-y-1.5 hover:border-brandCyan/40 hover:shadow-[0_0_25px_rgba(6,182,212,0.08)]">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-brandCyan transition-transform duration-300 hover:scale-105">-85%</div>
+                    <div class="text-sm font-medium text-slate-200 mt-2">Execution Time</div>
+                    <div class="text-xs text-slate-400 mt-1">From 80m to &lt;10m at Agero</div>
+                </div>
+                <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800/80 text-center transition-all duration-300 hover:-translate-y-1.5 hover:border-brandCyan/40 hover:shadow-[0_0_25px_rgba(6,182,212,0.08)]">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-brandCyan transition-transform duration-300 hover:scale-105">2x</div>
+                    <div class="text-sm font-medium text-slate-200 mt-2">Daily Production Releases</div>
+                    <div class="text-xs text-slate-400 mt-1">Unlocked high-velocity cadence</div>
+                </div>
+                <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800/80 text-center transition-all duration-300 hover:-translate-y-1.5 hover:border-brandCyan/40 hover:shadow-[0_0_25px_rgba(6,182,212,0.08)]">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-brandCyan transition-transform duration-300 hover:scale-105">&lt;1%</div>
+                    <div class="text-sm font-medium text-slate-200 mt-2">Flaky Failure Rate</div>
+                    <div class="text-xs text-slate-400 mt-1">Down from 25% legacy runtime</div>
+                </div>
+                <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800/80 text-center transition-all duration-300 hover:-translate-y-1.5 hover:border-brandCyan/40 hover:shadow-[0_0_25px_rgba(6,182,212,0.08)]">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-brandCyan transition-transform duration-300 hover:scale-105">70%</div>
+                    <div class="text-sm font-medium text-slate-200 mt-2">Automation Coverage</div>
+                    <div class="text-xs text-slate-400 mt-1">Built onshore team from scratch</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Timeline Section -->
+    <section id="experience" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-b border-slate-800">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-white">Professional Journey</h2>
+            <p class="text-slate-400 mt-2">Over a decade of managing agile frameworks, optimizing system matrices, and scaling engineering cultures.</p>
+        </div>
+
+        <div class="relative border-l border-slate-800 ml-4 md:ml-6 space-y-12">
+            
+            <!-- Job 1: Agero -->
+            <div class="relative pl-8 group">
+                <!-- Live Radar Ping Indicator Animation -->
+                <div class="absolute -left-[14px] top-1 w-4 h-4 rounded-full bg-brandCyan/30 flex items-center justify-center border border-obsidian">
+                    <div class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brandCyan opacity-75"></div>
+                    <div class="relative inline-flex rounded-full h-2 w-2 bg-brandCyan"></div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white transition-colors duration-300 group-hover:text-brandCyan">Agero, Inc.</h3>
+                        <p class="text-brandCyan font-semibold text-sm mt-0.5">
+                            Principal QA Engineer 
+                            <span class="text-slate-500 font-normal block md:inline md:ml-2">← Promoted from Senior QA Engineer</span>
+                        </p>
+                    </div>
+                    <span class="text-xs font-semibold tracking-wider text-slate-400 uppercase bg-slate-900 border border-slate-800 px-3 py-1 rounded-md inline-block">
+                        July 2024 — Present
+                    </span>
+                </div>
+                <ul class="mt-4 space-y-2.5 text-sm text-slate-400 list-disc list-inside leading-relaxed">
+                    <li>Overhauled flawed QA Acceptance Framework design, eliminating duplicated codes and migrating setup states to <span class="text-white font-medium">GraphQL APIs</span> to achieve a <span class="text-white font-medium">&lt;1% flaky runtime error rate</span>.</li>
+                    <li>Slashed CI/CD execution bottlenecks by <span class="text-white font-medium">85%</span>, safely dropping runtime processing windows from 80 minutes to under 10 minutes.</li>
+                    <li>Restructured target features to drive optimization layer distribution shifts across the automation pyramid, successfully enabling continuous <span class="text-white font-medium">twice-daily deployment actions</span>.</li>
+                    <li>Revived fractured performance processes, establishing structured documentation parameters to onboard teams directly into sustainable load testing regimens.</li>
+                </ul>
+            </div>
+
+            <!-- Job 2: Venngage -->
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-obsidian transition-colors duration-300 group-hover:bg-brandCyan"></div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-300 transition-colors duration-300 group-hover:text-white">Venngage</h3>
+                        <p class="text-slate-400 font-semibold text-sm mt-0.5">
+                            QA Manager cum Scrum Master 
+                            <span class="text-slate-500 font-normal block md:inline md:ml-2">← Promoted from QA Lead & QA Analyst</span>
+                        </p>
+                    </div>
+                    <span class="text-xs font-semibold tracking-wider text-slate-500 uppercase bg-slate-900 border border-slate-800 px-3 py-1 rounded-md inline-block">
+                        May 2018 — Jan 2023
+                    </span>
+                </div>
+                <ul class="mt-4 space-y-2.5 text-sm text-slate-400 list-disc list-inside leading-relaxed">
+                    <li>Scaled a highly productive <span class="text-white font-medium">onshore QA engineering department</span> completely from the ground up, allocating specialized resources across cross-functional streams.</li>
+                    <li>Engineered automated transformation initiatives, boosting legacy test suites gracefully from an initial <span class="text-white font-medium">10% up to 70% programmatic test coverage</span>.</li>
+                    <li>Optimized strategic operational models via Shift-Left patterns, decreasing critical regression leaks to drive a <span class="text-white font-medium">30% release quality increase</span> alongside 20% faster cycles.</li>
+                    <li>Championed corporate agile adoptions by introducing Scrum ceremonies (Sprint Reviews, Triage, and Retrospectives), eliminating pipeline friction blocks.</li>
+                </ul>
+            </div>
+
+            <!-- Job 3: AS White Global -->
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-800 border-4 border-obsidian transition-colors duration-300 group-hover:bg-brandCyan"></div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-400 transition-colors duration-300 group-hover:text-white">AS White Global</h3>
+                        <p class="text-slate-500 font-semibold text-sm mt-0.5">Senior QA Engineer</p>
+                    </div>
+                    <span class="text-xs font-semibold tracking-wider text-slate-500 uppercase bg-slate-900 border border-slate-800 px-3 py-1 rounded-md inline-block">
+                        Mar 2016 — July 2017
+                    </span>
+                </div>
+                <ul class="mt-4 space-y-2.5 text-sm text-slate-400 list-disc list-inside leading-relaxed">
+                    <li>Prevented downstream platform defects by <span class="text-white font-medium">25%</span> by evaluating specifications early during backlog refinement.</li>
+                    <li>Collaborated tightly within dedicated Scrum cycles to validate insurance document management infrastructure solutions.</li>
+                </ul>
+            </div>
+
+            <!-- Job 4: LogiGear Corporation -->
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-800 border-4 border-obsidian transition-colors duration-300 group-hover:bg-brandCyan"></div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-400 transition-colors duration-300 group-hover:text-white">LogiGear Corporation</h3>
+                        <p class="text-slate-500 font-semibold text-sm mt-0.5">Software Test Engineer</p>
+                    </div>
+                    <span class="text-xs font-semibold tracking-wider text-slate-500 uppercase bg-slate-900 border border-slate-800 px-3 py-1 rounded-md inline-block">
+                        Oct 2012 — Feb 2016
+                    </span>
+                </div>
+                <ul class="mt-4 space-y-2.5 text-sm text-slate-400 list-disc list-inside leading-relaxed">
+                    <li>Acted as principal core contact resource connecting over 40 technical manual, automation, and firmware engineers on network system tracks.</li>
+                    <li>Earned exceptional commendations from senior cross-functional management for excellence in technical peer mentorship.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Core Pillars of Expertise -->
+    <section id="pillars" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-white">Pillars of Expertise</h2>
+            <p class="text-slate-400 mt-2">How I design, scale, and manage enterprise-grade quality ecosystems.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="p-6 bg-slate-900/30 border border-slate-800/60 rounded-xl space-y-3 transition-all duration-300 hover:-translate-y-1.5 hover:border-brandCyan/40 hover:shadow-[0_0_25px_rgba(6,182,212,0.06)]">
+                <div class="text-brandCyan text-2xl">📐</div>
+                <h3 class="text-xl font-semibold text-white">Test Strategy & Agile Governance</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Blending PMP® paradigms with scrum mechanics to streamline product lifecycles and build out scalable onshore QA cultures from the ground up.</p>
+            </div>
+            <div class="p-6 bg-slate-900/30 border border-slate-800/60 rounded-xl space-y-3 transition-all duration-300 hover:-translate-y-1.5 hover:border-brandCyan/40 hover:shadow-[0_0_25px_rgba(6,182,212,0.06)]">
+                <div class="text-brandCyan text-2xl">⚡</div>
+                <h3 class="text-xl font-semibold text-white">High-Velocity Automation</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Re-engineering legacy test framework logic via explicit waiting models, GraphQL setups, and lightning-fast parallel CI execution blocks.</p>
+            </div>
+            <div class="p-6 bg-slate-900/30 border border-slate-800/60 rounded-xl space-y-3 transition-all duration-300 hover:-translate-y-1.5 hover:border-brandCyan/40 hover:shadow-[0_0_25px_rgba(6,182,212,0.06)]">
+                <div class="text-brandCyan text-2xl">🤖</div>
+                <h3 class="text-xl font-semibold text-white">AI Innovation & Productivity</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Leveraging intelligent Playwright Agent frameworks and modern generative AI extensions to accelerate test scripts, generation, and code patterns.</p>
+            </div>
+            <div class="p-6 bg-slate-900/30 border border-slate-800/60 rounded-xl space-y-3 transition-all duration-300 hover:-translate-y-1.5 hover:border-brandCyan/40 hover:shadow-[0_0_25px_rgba(6,182,212,0.06)]">
+                <div class="text-brandCyan text-2xl">🛡️</div>
+                <h3 class="text-xl font-semibold text-white">API & Vulnerability Validation</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Applying rigorous requirement analysis models backed by core understanding of modern OWASP API Top 10 web vulnerabilities.</p>
+            </div>
+            <div class="p-6 bg-slate-900/30 border border-slate-800/60 rounded-xl space-y-3 transition-all duration-300 hover:-translate-y-1.5 hover:border-brandCyan/40 hover:shadow-[0_0_25px_rgba(6,182,212,0.06)]">
+                <div class="text-brandCyan text-2xl">📈</div>
+                <h3 class="text-xl font-semibold text-white">Load & Scale Optimization</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Implementing thorough system load analysis strategies utilizing JMeter scripts to ensure core infrastructure holds firm under complex stress.</p>
+            </div>
+            <div class="p-6 bg-slate-900/30 border border-slate-800/60 rounded-xl space-y-3 transition-all duration-300 hover:-translate-y-1.5 hover:border-brandCyan/40 hover:shadow-[0_0_25px_rgba(6,182,212,0.06)]">
+                <div class="text-brandCyan text-2xl">👥</div>
+                <h3 class="text-xl font-semibold text-white">Technical Leadership & Mentoring</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Fostering high-autonomy teams using 360-degree feedback, pair-programming execution matrices, and continuous training workshops.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Peer Recommendations Section -->
+    <section id="testimonials" class="bg-slate-900/10 border-t border-slate-800 py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Industry Endorsements</h2>
+                <p class="text-slate-400 mt-2">What directors, engineering peers, and direct reports say about working with me.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Quote 1: Mia Marukot -->
+                <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-xl flex flex-col justify-between transition-all duration-300 hover:border-brandCyan/30">
+                    <p class="text-sm text-slate-300 italic leading-relaxed">
+                        "I have been managing An Vo for almost 5 years... His broad skillsets allows him to lead and manage a team to maintain alignment with company goals as well as diving deep into individual contributor’s daily tasks. An has made major contributions in the developing a high standard of quality..."
+                    </p>
+                    <div class="mt-6 pt-4 border-t border-slate-800">
+                        <div class="font-bold text-white text-sm">Mia Marukot</div>
+                        <div class="text-xs text-brandCyan">Direct Manager @ Venngage</div>
+                    </div>
+                </div>
+
+                <!-- Quote 2: Yehia El Gendi -->
+                <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-xl flex flex-col justify-between transition-all duration-300 hover:border-brandCyan/30">
+                    <p class="text-sm text-slate-300 italic leading-relaxed">
+                        "An is a great team player and capable leader... His communication is detailed, direct and constructive, with a focus on problem solving..."
+                    </p>
+                    <div class="mt-6 pt-4 border-t border-slate-800">
+                        <div class="font-bold text-white text-sm">Yehia El Gendi</div>
+                        <div class="text-xs text-brandCyan">Software Engineer @ Venngage</div>
+                    </div>
+                </div>
+
+                <!-- Quote 3: Yuri Panasenko -->
+                <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-xl flex flex-col justify-between transition-all duration-300 hover:border-brandCyan/30">
+                    <p class="text-sm text-slate-300 italic leading-relaxed">
+                        "An managed me directly from the start till the end in Venngage. He is team and result oriented, has extraordinary attention to details and always there for help. When I joined the team, An was mentoring me, always sharing his knowledge freely..."
+                    </p>
+                    <div class="mt-6 pt-4 border-t border-slate-800">
+                        <div class="font-bold text-white text-sm">Yuri Panasenko</div>
+                        <div class="text-xs text-brandCyan">QA Engineer (Direct Report) @ Venngage</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies & GitHub Projects Section -->
+    <section id="projects" class="bg-slate-900/20 border-t border-slate-800 py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Featured Architecture & Work</h2>
+                <p class="text-slate-400 mt-2">Real frameworks engineered for stability, continuous speed, and automation excellence.</p>
+            </div>
+            
+            <div class="space-y-12">
+                <!-- Project 1: Agero Case Study -->
+                <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-2xl grid md:grid-cols-3 gap-8 items-start transition-all duration-300 hover:border-brandCyan/30 hover:shadow-[0_0_30px_rgba(6,182,212,0.04)]">
+                    <div class="md:col-span-2 space-y-4">
+                        <div>
+                            <span class="inline-block text-xs bg-brandCyan/10 border border-brandCyan text-brandCyan px-3 py-1 rounded-md font-semibold tracking-wide uppercase">
+                                Enterprise Success
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Framework Restoration & Deployment Acceleration</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Inherited a legacy automated system suffering a 25% daily failure margin. Reorganized layout design architectures to eliminate heavy boilerplate elements, leveraged GraphQL network states to handle quick environment data setup, and condensed continuous runtime metrics down significantly.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs text-slate-300">
+                            <span class="bg-slate-800 px-2 py-1 rounded">Ruby on Rails</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">GraphQL API</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Capybara</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">GitHub Actions</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 space-y-3">
+                        <div class="text-xs uppercase font-bold text-slate-500 tracking-wider">Key Metrics Achieved</div>
+                        <div class="text-sm font-medium text-slate-200">📊 Execution Time: <span class="text-brandCyan">80m &rarr; &lt;10m (-85%)</span></div>
+                        <div class="text-sm font-medium text-slate-200">🎯 Flaky Failures: <span class="text-brandCyan">25% &rarr; &lt;1%</span></div>
+                        <div class="text-sm font-medium text-slate-200">🚀 Pipeline Speed: <span class="text-brandCyan">Unlocked 2x Daily Releases</span></div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Playwright -->
+                <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-2xl grid md:grid-cols-3 gap-8 items-start transition-all duration-300 hover:border-brandCyan/30 hover:shadow-[0_0_30px_rgba(6,182,212,0.04)]">
+                    <div class="md:col-span-2 space-y-4">
+                        <div>
+                            <span class="inline-block text-xs bg-cyan-500/10 border border-cyan-400 text-cyan-300 px-3 py-1 rounded-md font-semibold tracking-wide uppercase">
+                                AI Innovation
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">AI-Assisted Playwright End-to-End Architecture</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Designed a decoupled, modular end-to-end multi-browser test harness engine leveraging modern Playwright runners. Safely integrated structured generative AI agents to optimize target data locator scripts, lowering framework maintenance complexity.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs text-slate-300">
+                            <span class="bg-slate-800 px-2 py-1 rounded">Playwright</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">JavaScript</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Playwright Agent</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">GitHub Actions</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center h-full pt-4 md:pt-8">
+                        <a href="https://github.com/anvoqa/playwright-js" target="_blank" class="w-full text-center bg-slate-800 hover:bg-brandCyan hover:text-slate-950 text-white font-medium py-3 px-4 rounded-xl border border-slate-700 transition-all text-sm flex items-center justify-center gap-2">
+                            View Source Repository &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Enterprise Java Frameworks -->
+                <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-2xl grid md:grid-cols-3 gap-8 items-start transition-all duration-300 hover:border-brandCyan/30 hover:shadow-[0_0_30px_rgba(6,182,212,0.04)]">
+                    <div class="md:col-span-2 space-y-4">
+                        <div>
+                            <span class="inline-block text-xs bg-slate-800 border border-slate-700 text-slate-300 px-3 py-1 rounded-md font-semibold tracking-wide uppercase">
+                                Open Source Baseline
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Enterprise Java & Selenium Testing Repositories</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Robust infrastructure templates showing best practices for programmatic Page Object Model implementation, custom exception handlers, and continuous validation pipelines via Maven builds.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs text-slate-300">
+                            <span class="bg-slate-800 px-2 py-1 rounded">Java</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Selenium WebDriver</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Cucumber (BDD)</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Maven</span>
+                        </div>
+                    </div>
+                    <div class="space-y-3 pt-2 md:pt-4">
+                        <a href="https://github.com/anvoqa/cucumber-selenium-java" target="_blank" class="w-full text-center bg-slate-900/80 hover:bg-slate-800 hover:text-brandCyan text-slate-300 font-medium py-2 px-4 rounded-lg border border-slate-800 transition-all text-xs block">
+                            Repo: cucumber-selenium-java
+                        </a>
+                        <a href="https://github.com/anvoqa/selenium-java-ci" target="_blank" class="w-full text-center bg-slate-900/80 hover:bg-slate-800 hover:text-brandCyan text-slate-300 font-medium py-2 px-4 rounded-lg border border-slate-800 transition-all text-xs block">
+                            Repo: selenium-java-ci
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credentials & Education Section -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-800 grid md:grid-cols-2 gap-12">
+        <div>
+            <h3 class="text-lg font-bold text-white mb-4">Professional Certifications</h3>
+            <ul class="space-y-3 text-sm text-slate-400">
+                <li class="flex items-center gap-2">💼 <span class="text-slate-200 font-medium">Project Management Professional (PMP)®</span> — PMI</li>
+                <li class="flex items-center gap-2">🧩 <span class="text-slate-200 font-medium">Professional Scrum Master I (PSM I)</span> — Scrum.org</li>
+                <li class="flex items-center gap-2">🛡️ <span class="text-slate-200 font-medium">OWASP API Security Top 10</span> Verification</li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-lg font-bold text-white mb-4">Education History</h3>
+            <ul class="space-y-4 text-sm text-slate-400">
+                <li>
+                    <span class="text-slate-200 font-medium">Postgraduate Certificate, Software & Information Systems Testing</span> <br>
+                    <span class="text-xs text-slate-500">Fanshawe College (Ontario, Canada)</span>
+                </li>
+                <li>
+                    <span class="text-slate-200 font-medium">Bachelor of Engineering, Electronics & Telecommunications</span> <br>
+                    <span class="text-xs text-slate-500">Ho Chi Minh City University of Technology</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-[#06080F] py-8 text-center text-xs text-slate-500">
+        <p>&copy; 2026 An Vo. Engineered with high structural integrity and clean optimization models.</p>
+    </footer>
+
+</body>
+</html>
